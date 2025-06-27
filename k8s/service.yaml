@@ -7,5 +7,6 @@ spec:
   selector:
     app: task-app
   ports:
-    - port: 80
+    - protocol:
+      port: 80
       targetPort: 8000
