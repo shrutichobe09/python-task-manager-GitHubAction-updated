@@ -39,3 +39,8 @@ def delete_task(task_id: int, db: Session = Depends(get_db)):
     db.query(models.Task).filter(models.Task.id == task_id).delete()
     db.commit()
     return {"message": "Task deleted"}
+
+@app.get("/")
+def root():
+    return {"message": "Welcome to Task Manager API! Visit /tasks/ to get started."}
+
