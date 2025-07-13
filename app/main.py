@@ -42,5 +42,5 @@ def delete_task(task_id: int, db: Session = Depends(get_db)):
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to Task Manager API! Visit /tasks/ to get started."}
+    return {"message": "Welcome to Task Manager API! Visit /tasks/ to get started hhjd."}
 
